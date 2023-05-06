@@ -8,11 +8,20 @@ module.exports = {
     multiplicacion: function(a,b){
         return a*b
     },
-    divicion: function(a,b){
-        if(b !== 0){
-            return a / b;
-        }else{
-            return "No se puede dividir por 0, es una indeterminación"
+    dividir:{
+        divicionEntreDosNumeros: function(a,b){
+            if(b !== 0){
+                return a / b;
+            }else{
+                return "No se puede dividir por 0, es una indeterminación"
+            }
+        },
+        divicionEntreLogaritmos: function(a,b){
+            if(b !== 0 ){
+                return Math.log10(a) / Math.log10(b)
+            }else{
+                return "No se puede dividir por 0, es una indeterminación"
+            }
         }
     },
     elevacion: function(a,b){
