@@ -21,7 +21,7 @@ module.exports = {
     },
     raices:{
         raicesCuadradas: function(a){
-            return a>=0 ? Math.sqrt(a) : 'usted esta usando la operacion "Raiz", es decir. No existen raices cuadradas de un numero negativo'
+            return a>=0 ? Math.sqrt(a) : 'usted esta usando la operacion "raizCuadrada", es decir. No existen raices cuadradas de un numero negativo, y si introduciste una letra, tampoco va a funcionar'
         },raicesCubicas: function(a){
             return Math.cbrt(a)
         }
