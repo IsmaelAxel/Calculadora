@@ -4,7 +4,7 @@ const operacion = argv[2]
 const numeroA = +argv[3]
 const numeroB = +argv[4]
 if (argv.length < 4 || (operacion !== 'raizCuadrada' && operacion !== 'raizCubica' && argv.length < 5)) {
-    console.log('Error: No se proporcionaron suficientes argumentos');
+    console.log('Porfavor, ingrese todos los argumentos para realizar la operación matematica');
     process.exit(1); /* Sale del codigo y 1 es un tipo de error no especifico */
 }
 const PI = Math.PI;
@@ -20,8 +20,8 @@ else if(operacion === 'resta'){
     console.log(`La division de ${validacion} entre ${validacion2} es = ${calculadora.dividir.divisionEntreDosNumeros(validacion, validacion2)}`)
 }else if(operacion === 'divisionLogaritmica'){
     console.log(`La division de logaritmo en base 10 de ${validacion} entre logaritmo en base 10 de ${validacion2} es = ${calculadora.dividir.divisionEntreLogaritmos(validacion ,validacion2 )}`)
-}else if(operacion === 'elevado'){
-    console.log(`El numero ${validacion} elevado a la ${validacion2} es = ${calculadora.elevacion(validacion, validacion2)}`)
+}else if(operacion === 'potencia'){
+    console.log(`El numero ${validacion} elevado a la ${validacion2} es = ${calculadora.potencia(validacion, validacion2)}`)
 }else if(operacion === 'raizCuadrada'){
     console.log(`La raiz cuadrada de ${validacion} es = ${calculadora.raices.raicesCuadradas(validacion)}`)
 }else if(operacion === 'raizCubica'){
